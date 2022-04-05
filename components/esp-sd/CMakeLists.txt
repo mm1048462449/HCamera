@@ -1,0 +1,8 @@
+set(COMPONENT_SRCS 
+ sd_driver.c
+)
+set(COMPONENT_ADD_INCLUDEDIRS ".")
+set(COMPONENT_PRIV_INCLUDEDIRS "")
+set(COMPONENT_REQUIRES fatfs)
+set(COMPONENT_PRIV_REQUIRES newlib)
+register_component()

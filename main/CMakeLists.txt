@@ -1,0 +1,57 @@
+set(COMPONENT_SRCS 
+    app_gui/fonts/bingdundun.c
+    app_gui/fonts/picture.c
+    app_gui/fonts/hcamera_fonts_18.c
+    app_gui/dino/berd.c
+    app_gui/dino/berd1.c
+    app_gui/dino/cactus_big.c
+    app_gui/dino/cactus_small_many.c
+    app_gui/dino/cactus_small.c
+    app_gui/dino/dino_dead.c
+    app_gui/dino/dino_jump.c
+    app_gui/dino/dino_logo.c
+    app_gui/dino/dino_run_0.c
+    app_gui/dino/dino_run_1.c
+    app_gui/dino/dino.c
+    app_gui/core/lv_game.c
+    app_gui/gui_manager.c
+    app_gui/gui_main.c
+    app_gui/gui_camera.c
+    app_gui/gui_picture.c
+    app_gui/gui_game.c
+    app_gui/gui_setting.c
+    app_gui/gui_about.c
+    app_config.c
+    app_camera.c
+    app_wifi.c
+    app_board.c
+    app_controller.c
+    app_client.c
+    app_main.c
+)
+set(COMPONENT_ADD_INCLUDEDIRS
+    app_gui/fonts/include
+    app_gui/dino/include
+    app_gui/core/include
+    app_gui/include
+    include
+ )
+
+set(COMPONENT_REQUIRES
+    nvs_flash
+    esp_http_client
+    mdns
+    json
+    wpa_supplicant
+    fb_gfx
+    esp32-camera
+    esp-face
+    esp-lcd
+    esp-led
+    esp-slaves
+    lvgl
+    lvgl-driver
+    quirc
+)
+
+register_component()
